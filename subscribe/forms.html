@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+    <head>
+        <meta charset="UTF-8"> <!-- UTF-8 is human readable standard-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Webpage</title>
+    </head>
+    <body>
+        <h3>Please Enter the details</h3>
+
+        <!-- Form attribute - method and action -->
+        <form>
+
+            <label for="username">Enter your name:</label>
+            <input type="text" id="username" name="username" placeholder="Enter name" required> <br/><br/>
+
+            <label for="email">Enter email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter email" required> <br/><br/>
+
+            <label for="password">Enter Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter Password" required> <br/><br/>
+
+            <p>Select your age group</p>
+            <input type="radio" id="age" name="age" value="0-18"> 
+            <label for="age">0-18 yrs</label><br/><br/>
+            <input type="radio" id="age" name="age" value="19-30"> 
+            <label for="age">19-30 yrs</label><br/><br/>
+            <input type="radio" id="age" name="age" value="31+"> 
+            <label for="age">31+ yrs</label><br/><br/>
+
+            <label for="security">Security Question</label>
+            <select id="security" required>
+                <option value="answer1">What is your first pet name?</option>
+                <option value="answer2">If you were a plant, what would you be?</option>
+                <option value="answer3">Are you left handed?</option>
+            </select>
+            <br/><br/>
+
+            <label for="answer">Answer</label> <br/><br/>
+            <textarea id="answer" rows="5" cols="30" placeholder="Enter your answer...." required></textarea>
+            <br/><br/>
+
+            <label for="birthday">Enter your date of birth</label>
+            <input type="date" id="birthday" name="birthday" required> <br /><br />
+
+            
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset"> <br/><br/>
+        </form>
+
+
+    </body>
+</html>
