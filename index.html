@@ -1,89 +1,63 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en">
-    <head>
-        <meta charset="UTF-8"> <!-- UTF-8 is human readable standard-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Webpage</title>
-        <link rel="stylesheet" type="text/css" href="./css/position.css">
-    </head>
-    <body>
-        <!-- An iniline tag can have only data or another inline tag inside it-->
-        <!-- IDs and classes -->
-
-        <header id="header">
-            <h1>Sports Paradise</h1>
-        </header>
-          
-        <section class="banner">
-            <img src="./img/sports.jpg" alt="This is the banner" />
-            <div class="welcome">
-                <h2>Welcome</h2>
-                <p>Read your favourite <span>sports blog!!!</span></p>
-            </div>
-            
-            
-        </section>
-            
-        
-        
-        <nav id="navigation">
-            <ul>
-                <li><a href="./contact.html">CONTACT US</a></li>
-                <li><a href="./subscribe/subscribe.html">SUBSCRIBE HERE</a></li>
-                <li><a href="https://www.google.com" target="_blank">KNOW MORE!!!</a></li>
-                <li><a href="https://www.google.com" target="_blank">READ MORE</a></li>
-            </ul>     
-        </nav>
-        
-        <main id="main">
-            <section id="blog-list">
-                    <h2>Here are some of our best blogs</h2>
-                    <ol>
-                        <li class="blog football">
-                            <h3>Should Liverpool deserve EPL title!!</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur praesentium officia quas nisi totam dolores, amet vero placeat esse ducimus, blanditiis, explicabo consequatur sunt laborum nam voluptas culpa illum non! <a href="https://liverpooloffside.sbnation.com/" target="_blank">Read More...</a></p>
-                        </li>
-                        <li class="blog cricket">
-                            <h3>How IPL 2020 affected BCCI!!</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur praesentium officia quas nisi totam dolores, amet vero placeat esse ducimus, blanditiis, explicabo consequatur sunt laborum nam voluptas culpa illum non!</p>
-                        </li>
-                        <li class="blog basketball">
-                            <h3>Would have LeBron James won NBA MVP!!</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur praesentium officia quas nisi totam dolores, amet vero placeat esse ducimus, blanditiis, explicabo consequatur sunt laborum nam voluptas culpa illum non!</p>
-                        </li>
-                    </ol>
-            </section>  
-            <section id="current-news">
-                <h3>News in sports world!</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam beatae ab consectetur dolore mollitia officiis perferendis, nulla magnam ad! Quibusdam ad expedita rerum animi aliquid fugiat ea mollitia soluta a!</p>
-            </section>          
-        </main>
-
-        <section id="about-section">
-            <h2>About Us</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, rem nihil animi minus nulla beatae, ipsa sunt id velit non odit, deserunt deleniti? Laborum fugit, totam autem dolore reiciendis temporibus!</p>
-        </section>
-
-        <footer>
-            <div id="contact-section">
-                <h2>CONTACT</h2>
-    
-                <div class="contact-method">
-                    <h3>Phone Number</h3>
-                    <p>95xxxxxx01</p>
-                </div>
-    
-                <div class="contact-method">
-                    <h3>Email Us</h3>
-                    <p>myemail@xyz.com</p>
-                </div>
-                
-                <div class="contact-method">
-                    <h3>Social Media</h3>
-                    <p><a href="#"> Instagram</a></p>
-                </div>
-            </div>
-        </footer>
-        
-    </body>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet" />
+    <title>Working with JavaScript DOM</title>
+  </head>
+  <body>
+  	<div id="wrapper">
+	    <header>
+	    	<div id="page-banner">
+	    		<h1 class="title">Moviemania</h1>
+          <p>Movies for everyone</p>
+          <form id="search-movies">
+            <input type="text" placeholder="Search movies..." />
+          </form>
+	    	</div>
+	    </header>
+	    <div id="movie-list">
+	    	<h2 class="title">Movies to watch</h2>
+	    	<ul>
+	    		<li>
+	    			<span class="name">Fight Club</span>
+	    			<span class="delete">delete</span>
+	    		</li>
+	    		<li>
+	    			<span class="name">Shawshank Redemption</span>
+	    			<span class="delete">delete</span>
+	    		</li>
+	    		<li>
+	    			<span class="name">Secret life of Walter Mitty</span>
+	    			<span class="delete">delete</span>
+	    		</li>
+	    		<li>
+	    			<span class="name">Dark Knight</span>
+	    			<span class="delete">delete</span>
+	    		</li>
+	    	</ul>
+	    </div>
+	    <form id="add-movie">
+        <input type="checkbox" id="hide" />
+				<label for="hide"> Hide the List </label>
+				<input type="text" id="movie-name" placeholder="Add a movie..." />
+	    	<button id="btn">Add</button>
+	    </form>
+      <div id="tabbed-content">
+        <ul class="tabs">
+          <li data-target="#about" class="active">About</li>
+          <li data-target="#contact">Contact</li>
+        </ul>
+        <div class="panel active" id="about">
+          <p>Content for about tab...</p>
+          <p>This is an application for creating a person's movies list</p>
+        </div>
+        <div class="panel" id="contact">
+          <p>Content for contact tab...</p>
+          <p>Contact to know more</p>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
 </html>
